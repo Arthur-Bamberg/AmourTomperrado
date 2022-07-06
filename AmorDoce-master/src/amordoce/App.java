@@ -15,10 +15,11 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
-    private static Obama michele = new Obama();
     
-    public static Obama getMichele(){
-        return michele;
+    private static Game game = new Game();
+    
+    public Game getGame() {
+        return game;
     }
     
     @Override

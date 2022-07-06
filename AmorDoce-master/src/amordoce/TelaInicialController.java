@@ -8,25 +8,20 @@ package amordoce;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
-
+import javafx.scene.control.Button;
 
 public class TelaInicialController implements Initializable {
 
     @FXML
-    private Label labelInit;
+    private Button startButton;
 
-    @FXML
-    private void handleButtonAction(ActionEvent event) throws IOException {
-       App.setRoot("kitchen");
+    public void click() throws IOException {
+        App.setRoot("TelaObama");
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        labelInit.setText("Este é um projeto criado com base no jogo de múltipla escolha 'Amor Doce'. Onde VOCÊ descobrirá seu AMOUR TOMPERRADO!");
     }
-
 }

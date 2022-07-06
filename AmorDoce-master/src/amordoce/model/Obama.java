@@ -6,6 +6,6 @@ public class Obama extends ClassCharacter {
 
     public Obama(){
         setName("Michelle Obama");    
-        setRelationPoints(10);
+        setRelationPoints(45);
     }
 }

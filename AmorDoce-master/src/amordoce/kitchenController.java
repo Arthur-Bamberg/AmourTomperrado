@@ -25,8 +25,7 @@ public class kitchenController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        Obama obama = App.getMichele();
-        obamaLabel.setText("Meu nome é " + obama.getName() + "\nSua relação comigo é: " + obama.getRelationPoints());
+        
     }    
     
 }
