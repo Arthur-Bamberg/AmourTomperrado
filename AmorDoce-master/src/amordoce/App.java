@@ -1,6 +1,5 @@
 package amordoce;
 
-import amordoce.model.Obama;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,11 +15,7 @@ public class App extends Application {
 
     private static Scene scene;
     
-    private static Game game = new Game();
-    
-    public Game getGame() {
-        return game;
-    }
+    public static Game game = new Game();
     
     @Override
     public void start(Stage stage) throws IOException {

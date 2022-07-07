@@ -1,17 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="amordoce.kitchenController">
-   <children>
-      <ImageView fitHeight="1080.0" fitWidth="1920.0">
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="amordoce.kitchenController">
+    <children>
+        <ImageView fitHeight="768.0" fitWidth="1366.0">
+            <image>
+                <Image url="@../assets/background/cozinha.png" />
+            </image>
+        </ImageView>
+        <ImageView layoutX="357.0" layoutY="252.0">
+            <image>
+                <Image url="@../assets/gameCharacter/Obama.png" />
+            </image>
+        </ImageView>
+      <Label alignment="CENTER" layoutX="485.0" layoutY="42.0" prefHeight="179.0" prefWidth="397.0" style="-fx-background-color: RGBA(0, 0, 0, .5);" text="Você terá uma semana de experiência, escolha seu instrutor!" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="467.0" fitWidth="344.0" layoutX="-6.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Michele_Obama.png" />
+            <Image url="@../assets/gameCharacter/Hilbert.png" />
          </image>
       </ImageView>
-      <Label fx:id="obamaLabel" layoutX="239.0" layoutY="168.0" text="Label" />
-   </children>
+      <ImageView fitHeight="467.0" fitWidth="295.0" layoutX="735.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/gameCharacter/Beca.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="56.0" layoutY="300.0" mnemonicParsing="false" onAction="#chooseHilbert" prefHeight="63.0" prefWidth="105.0" text="Escolher">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label id="HilbertLabel" fx:id="HilbertLabel" layoutX="109.0" layoutY="170.0" prefHeight="105.0" prefWidth="306.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" text="Hilbert" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label id="BecaLabel" fx:id="BecaLabel" layoutX="979.0" layoutY="169.0" prefHeight="105.0" prefWidth="269.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" text="Beca" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="1008.0" layoutY="312.0" mnemonicParsing="false" onAction="#chooseBeca" prefHeight="63.0" prefWidth="105.0" text="Escolher">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+    </children>
 </AnchorPane>

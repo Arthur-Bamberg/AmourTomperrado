@@ -22,15 +22,19 @@ public class Game {
         characterList.add(new Fogaca());//Indice 2
         characterList.add(new Hilbert());//Indice 3
         characterList.add(new Jacquin());//Indice 4
-        characterList.add(new Obama());//Indice 6
-        characterList.add(new Rizzo());///Indice 5
-        characterList.add(new Ramsay());//Indice 6
-        characterList.add(new Rizzo());//Indice 7
-        characterList.add(new Rodrigues());//Indice 8
-        characterList.add(new Sangreal());//Indice 9
+        characterList.add(new Obama());//Indice 5
+        characterList.add(new Rizzo());///Indice 6
+        characterList.add(new Ramsay());//Indice 7
+        characterList.add(new Rizzo());//Indice 8
+        characterList.add(new Rodrigues());//Indice 9
+        characterList.add(new Sangreal());//Indice 10
     }
     
     public ClassCharacter getCharacter(int index) {
         return characterList.get(index);
+    }
+    
+    public void response (int indexOfCharacter, int relationPointsToChange, String statement, String option) {
+        characterList.get(indexOfCharacter).setResponse(relationPointsToChange, statement, option);
     }
 }

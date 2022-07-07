@@ -3,9 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Usuario/Documents/AmourTomperrado/AmorDoce-master/src/amordoce/TelaInicialController.java</file>
-            <file>file:/C:/Users/Usuario/Documents/AmourTomperrado/AmorDoce-master/src/amordoce/TelaObama.fxml</file>
-            <file>file:/C:/Users/Usuario/Documents/AmourTomperrado/AmorDoce-master/src/amordoce/TelaObamaController.java</file>
+            <file>file:/C:/Users/Arthur/Documents/AmourTomperrado/AmorDoce-master/src/amordoce/model/classCharacter/ClassCharacter.java</file>
+            <file>file:/C:/Users/Arthur/Documents/AmourTomperrado/AmorDoce-master/src/amordoce/kitchen.fxml</file>
+            <file>file:/C:/Users/Arthur/Documents/AmourTomperrado/AmorDoce-master/src/amordoce/TelaObamaController.java</file>
+            <file>file:/C:/Users/Arthur/Documents/AmourTomperrado/AmorDoce-master/src/amordoce/TelaInicialController.java</file>
+            <file>file:/C:/Users/Arthur/Documents/AmourTomperrado/AmorDoce-master/src/amordoce/TelaFinalController.java</file>
+            <file>file:/C:/Users/Arthur/Documents/AmourTomperrado/AmorDoce-master/src/amordoce/Game.java</file>
+            <file>file:/C:/Users/Arthur/Documents/AmourTomperrado/AmorDoce-master/src/amordoce/TelaFinal.fxml</file>
         </group>
     </open-files>
 </project-private>
