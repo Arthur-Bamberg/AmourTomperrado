@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class ClassCharacter {
     private String name;
     private int relationPoints;
-    private List <Dialog> dialogs;
+    private List <Dialog> dialogs = new ArrayList<>();
     private List <String> logOfDialogs = new ArrayList<>();
 
     public String getName() {

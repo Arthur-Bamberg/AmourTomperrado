@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="amordoce.TelaFinalController">
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="amordoce.TelaFinalController">
    <children>
       <ImageView fitHeight="776.0" fitWidth="1366.0" layoutX="-5.0" layoutY="-7.0">
          <image>
@@ -18,7 +18,7 @@
             <Image url="@../assets/gameCharacter/Obama.png" />
          </image>
       </ImageView>
-      <Label fx:id="log" layoutX="13.0" layoutY="168.0" prefHeight="532.0" prefWidth="472.0" text="wehrewhewhnrthjertyjetyjetyjety" textFill="WHITE" wrapText="true">
+      <Label fx:id="log" layoutX="13.0" layoutY="18.0" prefHeight="745.0" prefWidth="494.0" text="wehrewhewhnrthjertyjetyjetyjety" textFill="WHITE" wrapText="true">
          <font>
             <Font size="45.0" />
          </font>

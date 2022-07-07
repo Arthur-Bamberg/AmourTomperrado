@@ -11,6 +11,8 @@ import amordoce.model.Rizzo;
 import amordoce.model.Rodrigues;
 import amordoce.model.Sangreal;
 import amordoce.model.classCharacter.ClassCharacter;
+import amordoce.model.classCharacter.utils.Dialog;
+
 import java.util.ArrayList;
 
 public class Game {
@@ -23,18 +25,18 @@ public class Game {
         characterList.add(new Hilbert());//Indice 3
         characterList.add(new Jacquin());//Indice 4
         characterList.add(new Obama());//Indice 5
-        characterList.add(new Rizzo());///Indice 6
-        characterList.add(new Ramsay());//Indice 7
-        characterList.add(new Rizzo());//Indice 8
-        characterList.add(new Rodrigues());//Indice 9
-        characterList.add(new Sangreal());//Indice 10
+        characterList.add(new Ramsay());//Indice 6
+        characterList.add(new Rizzo());//Indice 7
+        characterList.add(new Rodrigues());//Indice 8
+        characterList.add(new Sangreal());//Indice 9
     }
     
     public ClassCharacter getCharacter(int index) {
         return characterList.get(index);
     }
     
-    public void response (int indexOfCharacter, int relationPointsToChange, String statement, String option) {
-        characterList.get(indexOfCharacter).setResponse(relationPointsToChange, statement, option);
+    public void response (int indexOfCharacter, Dialog dialog, int indexOfOption) {
+        //ClassCharacter c = characterList.get(indexOfCharacter);
+        characterList.get(indexOfCharacter).setResponse(dialog.getOption(indexOfOption).getChangeRelationPoints(), dialog.getStatement(), dialog.getOption(indexOfOption).getTextOption());
     }
 }

@@ -23,12 +23,12 @@ public class kitchenController implements Initializable {
     }
 
     public void chooseBeca() throws IOException {
-        game.response(6, 45, "Você terá uma semana de experiência, escolha seu instrutor!", "Beca");
+        //game.response(6, 45, "Você terá uma semana de experiência, escolha seu instrutor!", "Beca");
         App.setRoot("TelaFinal");
     }
 
     public void chooseHilbert() throws IOException {
-        game.response(6, 45, "Você terá uma semana de experiência, escolha seu instrutor!", "Hilbert");
+        //game.response(6, 45, "Você terá uma semana de experiência, escolha seu instrutor!", "Hilbert");
         App.setRoot("TelaFinal");
     }
 }
