@@ -19,15 +19,20 @@
                 <Image url="@../assets/gameCharacter/Obama.png" />
             </image>
         </ImageView>
-      <Label fx:id="ObamaLabel" alignment="CENTER" layoutX="293.0" layoutY="129.0" prefHeight="246.0" prefWidth="781.0" style="-fx-background-color: rgba(0, 0, 0, .5);" text="Obama" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font name="Berlin Sans FB Demi Bold" size="30.0" />
-         </font>
-      </Label>
-      <Button layoutX="829.0" layoutY="580.0" mnemonicParsing="false" onAction="#goToKitchen" prefHeight="82.0" prefWidth="214.0" style="-fx-background-color: rgba(0, 0, 0, .8);" text="Cozinha" textAlignment="CENTER" textFill="WHITE">
-         <font>
-            <Font size="39.0" />
-         </font>
-      </Button>
+        <Label fx:id="ObamaLabel" alignment="CENTER" layoutX="344.0" layoutY="129.0" prefHeight="246.0" prefWidth="781.0" style="-fx-background-color: rgba(0, 0, 0, .5);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="30.0" />
+            </font>
+        </Label>
+        <Label id="BecaLabel" fx:id="StatusLabel" layoutX="14.0" layoutY="169.0" prefHeight="105.0" prefWidth="269.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" textFill="WHITE">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Button layoutX="829.0" layoutY="580.0" mnemonicParsing="false" onAction="#goToKitchen" prefHeight="82.0" prefWidth="214.0" style="-fx-background-color: rgba(0, 0, 0, .8);" text="Cozinha" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="39.0" />
+            </font>
+        </Button>
     </children>
 </AnchorPane>

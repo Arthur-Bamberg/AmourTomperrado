@@ -34,9 +34,8 @@ public class Game {
     public ClassCharacter getCharacter(int index) {
         return characterList.get(index);
     }
-    
+
     public void response (int indexOfCharacter, Dialog dialog, int indexOfOption) {
-        //ClassCharacter c = characterList.get(indexOfCharacter);
         characterList.get(indexOfCharacter).setResponse(dialog.getOption(indexOfOption).getChangeRelationPoints(), dialog.getStatement(), dialog.getOption(indexOfOption).getTextOption());
     }
 }

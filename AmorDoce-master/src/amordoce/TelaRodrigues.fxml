@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="amordoce.TelaRodriguesController">
+    <children>
+        <ImageView fx:id="background" fitHeight="768.0" fitWidth="1366.0">
+            <image>
+                <Image url="@../assets/background/beco.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="character" fitHeight="615.0" fitWidth="489.0" layoutX="14.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/gameCharacter/Rodrigues.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="statement" alignment="CENTER" layoutX="482.0" layoutY="13.0" prefHeight="303.0" prefWidth="622.0" style="-fx-background-color: RGBA(0, 0, 0, .5);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <Label fx:id="status" alignment="CENTER" layoutX="108.0" layoutY="202.0" prefHeight="114.0" prefWidth="302.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Button fx:id="bottom" layoutX="471.0" layoutY="618.0" mnemonicParsing="false" onAction="#Bottom" prefHeight="120.0" prefWidth="660.0" text="Button" wrapText="true">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="middle" layoutX="471.0" layoutY="475.0" mnemonicParsing="false" onAction="#Middle" prefHeight="120.0" prefWidth="660.0" text="Button" wrapText="true">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="top" layoutX="471.0" layoutY="335.0" mnemonicParsing="false" onAction="#Top" prefHeight="120.0" prefWidth="660.0" text="Button" wrapText="true">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

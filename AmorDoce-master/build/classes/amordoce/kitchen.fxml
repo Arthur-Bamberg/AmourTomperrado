@@ -38,12 +38,12 @@
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Label id="HilbertLabel" fx:id="HilbertLabel" layoutX="109.0" layoutY="170.0" prefHeight="105.0" prefWidth="306.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" text="Hilbert" textFill="WHITE">
+      <Label id="HilbertLabel" fx:id="HilbertLabel" alignment="CENTER" layoutX="109.0" layoutY="170.0" prefHeight="105.0" prefWidth="306.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
          <font>
             <Font size="22.0" />
          </font>
       </Label>
-      <Label id="BecaLabel" fx:id="BecaLabel" layoutX="979.0" layoutY="169.0" prefHeight="105.0" prefWidth="269.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" text="Beca" textFill="WHITE">
+      <Label id="BecaLabel" fx:id="BecaLabel" alignment="CENTER" layoutX="979.0" layoutY="169.0" prefHeight="105.0" prefWidth="269.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" textFill="WHITE" wrapText="true">
          <font>
             <Font size="22.0" />
          </font>
@@ -53,5 +53,10 @@
             <Font size="20.0" />
          </font>
       </Button>
+      <Label id="HilbertLabel" fx:id="ObamaLabel" alignment="CENTER" layoutX="598.0" layoutY="222.0" prefHeight="105.0" prefWidth="206.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>
