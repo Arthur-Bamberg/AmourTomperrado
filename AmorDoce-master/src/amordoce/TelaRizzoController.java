@@ -10,9 +10,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 
-public class TelaJacquinController implements Initializable {
+public class TelaRizzoController implements Initializable {
 
-    private String statementText = "Ow! Su Errick Jacquin, u rri do tomperro. Qui é vuce?";
+    private String statementText = "Olá! Sou Alice Rodrigues, sou a confeiteira chefe do restaurante. Quer experimentar meu marijucake?";
     private ArrayList<String> options = new ArrayList<>();
 
     @FXML
@@ -35,8 +35,8 @@ public class TelaJacquinController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        options.add("Sua maior fã! Sou uma chefe graças a você!!!");
-        options.add("Vigonha da pofisson");
+        options.add("Adoraria!");
+        options.add("Só depois do serviço!");
 
         status.setText(App.game.getCharacter(8).toString());
         statement.setText(statementText);
@@ -48,13 +48,13 @@ public class TelaJacquinController implements Initializable {
         App.game.getCharacter(8).changeRelationPoints(50);
         App.game.getCharacter(8).setLogOfDialogs(statementText, options.get(0));
         
-        App.setRoot("TelaFinal");    
+        App.setRoot("TelaJacquin");    
     }
 
     public void Bottom() throws IOException {
         App.game.getCharacter(8).changeRelationPoints(10);
         App.game.getCharacter(8).setLogOfDialogs(statementText, options.get(1));
         
-        App.setRoot("TelaFinal");      
+        App.setRoot("TelaJacquin");      
     }
 }

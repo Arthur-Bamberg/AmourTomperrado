@@ -7,7 +7,11 @@ import java.util.ArrayList;
 
 public class ClassCharacter {
     private String name;
+    private int dificultLevel;
     private int relationPoints;
+    private int ciumes;
+    private int aversao;
+    private int confianca;
     private List <Dialog> dialogs = new ArrayList<>();
     private List <String> logOfDialogs = new ArrayList<>();
 
@@ -17,6 +21,14 @@ public class ClassCharacter {
 
     public void setName(String name) {
         this.name = name;
+    }
+    
+    public int getDificultLevel() {
+        return this.dificultLevel;
+    }
+
+    public void setDificultLevel(int dificultLevel) {
+        this.dificultLevel = dificultLevel;
     }
 
     public int getRelationPoints() {
@@ -29,6 +41,42 @@ public class ClassCharacter {
     
     public void changeRelationPoints(int changedPoints) {
         this.relationPoints += changedPoints;
+    }
+    
+    public int getCiumes() {
+        return this.ciumes;
+    }
+
+    public void setCiumes(int ciumes) {
+        this.ciumes = ciumes;
+    }
+    
+    public void changeCiumes(int changedCiumes) {
+        this.ciumes += changedCiumes;
+    }
+    
+    public int getAversao() {
+        return this.aversao;
+    }
+
+    public void setAversao(int aversao) {
+        this.aversao = aversao;
+    }
+    
+    public void changeAversao(int changedAversao) {
+        this.ciumes += changedAversao;
+    }
+    
+    public int getConfianca() {
+        return this.confianca;
+    }
+
+    public void setConfianca(int confianca) {
+        this.confianca = confianca;
+    }
+    
+    public void changeConfianca(int changedConfianca){
+        this.confianca += changedConfianca;
     }
 
     public void setNewDialog(Dialog dialog) {

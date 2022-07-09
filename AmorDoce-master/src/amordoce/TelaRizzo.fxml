@@ -7,16 +7,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="amordoce.TelaRodriguesController">
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="amordoce.TelaRizzoController">
     <children>
         <ImageView fx:id="background" fitHeight="768.0" fitWidth="1366.0">
             <image>
-                <Image url="@../assets/background/bar.png" />
+                <Image url="@../assets/background/Restaurante.png" />
             </image>
         </ImageView>
-        <ImageView fx:id="character" fitHeight="615.0" fitWidth="489.0" layoutX="14.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="character" fitHeight="768.0" fitWidth="985.0" layoutX="-192.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../assets/gameCharacter/Rodrigues.png" />
+                <Image url="@../assets/gameCharacter/Rizzo.png" />
             </image>
         </ImageView>
         <Label fx:id="statement" alignment="CENTER" layoutX="482.0" layoutY="13.0" prefHeight="303.0" prefWidth="622.0" style="-fx-background-color: RGBA(0, 0, 0, .5);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
@@ -29,12 +29,12 @@
                 <Font size="22.0" />
             </font>
         </Label>
-        <Button fx:id="bottom" layoutX="471.0" layoutY="558.0" mnemonicParsing="false" onAction="#Bottom" prefHeight="120.0" prefWidth="660.0" text="Button" wrapText="true">
+        <Button fx:id="bottom" layoutX="482.0" layoutY="551.0" mnemonicParsing="false" onAction="#Bottom" prefHeight="120.0" prefWidth="660.0" text="Button" wrapText="true">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="top" layoutX="471.0" layoutY="384.0" mnemonicParsing="false" onAction="#Top" prefHeight="120.0" prefWidth="660.0" text="Button" wrapText="true">
+        <Button fx:id="top" layoutX="482.0" layoutY="380.0" mnemonicParsing="false" onAction="#Top" prefHeight="120.0" prefWidth="660.0" text="Button" wrapText="true">
             <font>
                 <Font size="20.0" />
             </font>

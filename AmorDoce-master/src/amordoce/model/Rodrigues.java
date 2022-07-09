@@ -7,5 +7,9 @@ public class Rodrigues extends ClassCharacter {
     public Rodrigues() {
         setName("Alice Rodrigues");
         setRelationPoints(30);
+        setCiumes(0);
+        setAversao(0);
+        setConfianca(13);
+        setDificultLevel(0);
     }
 }

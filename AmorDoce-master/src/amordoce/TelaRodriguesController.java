@@ -12,7 +12,7 @@ import javafx.scene.image.ImageView;
 
 public class TelaRodriguesController implements Initializable {
 
-    private String statementText = "Olá! Sou Alice Rodrigues, sou a confeiteira chefe do restaurante. Quer experimentar meu marijucake?";
+    private String statementText = "AliceBecca: Bem- vinda! Sou Alice e já vi que não escolheu muito bem seu orientador.";
     private ArrayList<String> options = new ArrayList<>();
 
     @FXML
@@ -31,22 +31,17 @@ public class TelaRodriguesController implements Initializable {
     private Button top;
 
     @FXML
-    private Button middle;
-
-    @FXML
     private Button bottom;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        options.add("Adoraria!");
-        options.add("Só depois do serviço!");
-        options.add("Minha nossa senhora! Claro que não!!!");
+        options.add("Por que?");
+        options.add("*Não dizer nada e fingir-se de surdo*");
 
         status.setText(App.game.getCharacter(8).toString());
         statement.setText(statementText);
         top.setText(options.get(0));
-        middle.setText(options.get(1));
-        bottom.setText(options.get(2));
+        bottom.setText(options.get(1));
     }
 
     public void Top() throws IOException {
@@ -56,17 +51,10 @@ public class TelaRodriguesController implements Initializable {
         App.setRoot("TelaJacquin");    
     }
 
-    public void Middle() throws IOException {
+    public void Bottom() throws IOException {
         App.game.getCharacter(8).changeRelationPoints(10);
         App.game.getCharacter(8).setLogOfDialogs(statementText, options.get(1));
         
         App.setRoot("TelaJacquin");      
-    }
-
-    public void Bottom() throws IOException {
-        App.game.getCharacter(8).changeRelationPoints(-50);
-        App.game.getCharacter(8).setLogOfDialogs(statementText, options.get(2));
-        
-        App.setRoot("TelaJacquin");
     }
 }

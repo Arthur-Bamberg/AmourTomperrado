@@ -9,5 +9,9 @@ public class Jacquin extends ClassCharacter {//Estou usando como fase de teste e
     public Jacquin() {
         setName("Jacquin");//Nome do personagem
         setRelationPoints(-10);//Pontos de relação no início do jogo
+        setCiumes(0);
+        setAversao(5);
+        setConfianca(0);
+        setDificultLevel(0);
     }
 }

@@ -7,5 +7,9 @@ public class Ramsay extends ClassCharacter {
     public Ramsay() {
         setName("Gordon Ramsay");
         setRelationPoints(0);
+        setCiumes(0);
+        setAversao(10);
+        setConfianca(-1);
+        setDificultLevel(0);
     }
 }

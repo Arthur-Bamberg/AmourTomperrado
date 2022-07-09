@@ -11,6 +11,10 @@ public class Obama extends ClassCharacter {
     public Obama(){
         setName("Michelle Obama");    
         setRelationPoints(45);
+        setCiumes(0);
+        setAversao(0);
+        setConfianca(20);
+        setDificultLevel(0);
         
         options.add(new Option("Cozinha", 10, "kitchen"));
         
