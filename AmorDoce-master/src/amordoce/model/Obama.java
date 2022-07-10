@@ -9,12 +9,13 @@ public class Obama extends ClassCharacter {
     private ArrayList <Option> options = new ArrayList<Option>();
     
     public Obama(){
-        setName("Michelle Obama");    
+        setName("Michelle Obama");  
+        setImgSrc("/assets/gameCharacter/Obama.png");
         setRelationPoints(45);
         setCiumes(0);
         setAversao(0);
-        setConfianca(20);
-        setDificultLevel(0);
+        setConfianca(100);
+        setDificultLevel(50);
         
         options.add(new Option("Cozinha", 10, "kitchen"));
         

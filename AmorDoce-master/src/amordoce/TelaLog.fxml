@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="amordoce.TelaLogController">
+    <children>
+        <ImageView fitHeight="768.0" fitWidth="1366.0">
+            <image>
+                <Image url="@../assets/background/beco.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="c0" layoutX="236.0" layoutY="108.0" mnemonicParsing="false" onAction="#c0" prefHeight="97.0" prefWidth="207.0" style="-fx-background-color: rgba(0, 0, 0, 0.3);" text="Button" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+        <Button mnemonicParsing="false" onAction="#Back" prefHeight="108.0" prefWidth="186.0" text="Voltar" />
+      <Button fx:id="c9" layoutX="1024.0" layoutY="485.0" mnemonicParsing="false" onAction="#c9" prefHeight="97.0" prefWidth="259.0" style="-fx-background-color: rgba(0, 0, 0, 0.3);" text="Button" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="c8" layoutX="714.0" layoutY="485.0" mnemonicParsing="false" onAction="#c8" prefHeight="97.0" prefWidth="207.0" style="-fx-background-color: rgba(0, 0, 0, 0.3);" text="Button" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="c7" layoutX="381.0" layoutY="485.0" mnemonicParsing="false" onAction="#c7" prefHeight="97.0" prefWidth="207.0" style="-fx-background-color: rgba(0, 0, 0, 0.3);" text="Button" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="c6" layoutX="83.0" layoutY="485.0" mnemonicParsing="false" onAction="#c6" prefHeight="97.0" prefWidth="207.0" style="-fx-background-color: rgba(0, 0, 0, 0.3);" text="Button" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="c5" layoutX="945.0" layoutY="287.0" mnemonicParsing="false" onAction="#c5" prefHeight="97.0" prefWidth="275.0" style="-fx-background-color: rgba(0, 0, 0, 0.3);" text="Button" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="c4" layoutX="580.0" layoutY="287.0" mnemonicParsing="false" onAction="#c4" prefHeight="97.0" prefWidth="207.0" style="-fx-background-color: rgba(0, 0, 0, 0.3);" text="Button" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="c3" layoutX="236.0" layoutY="287.0" mnemonicParsing="false" onAction="#c3" prefHeight="97.0" prefWidth="207.0" style="-fx-background-color: rgba(0, 0, 0, 0.3);" text="Button" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="c2" layoutX="945.0" layoutY="118.0" mnemonicParsing="false" onAction="#c2" prefHeight="97.0" prefWidth="259.0" style="-fx-background-color: rgba(0, 0, 0, 0.3);" text="Button" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="c1" layoutX="580.0" layoutY="118.0" mnemonicParsing="false" onAction="#c1" prefHeight="97.0" prefWidth="207.0" style="-fx-background-color: rgba(0, 0, 0, 0.3);" text="Button" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="status" layoutX="103.0" layoutY="108.0" prefHeight="403.0" prefWidth="458.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="log" alignment="CENTER" layoutX="690.0" prefHeight="768.0" prefWidth="536.0" style="-fx-background-color: rgba(0,0,0,0.5);" text="Label" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

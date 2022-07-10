@@ -50,23 +50,28 @@ public class TelaDialogoController implements Initializable {
     }
 
     public void Top() throws IOException {
-        App.game.getCharacter(6).changeRelationPoints(20);
+        App.game.getCharacter(6).changeRelationPoints(10);
         App.game.getCharacter(6).setLogOfDialogs(statementText, options.get(0));
-        
-        App.setRoot("TelaRodrigues");    
+
+        App.setRoot("TelaRodrigues");
     }
 
     public void Middle() throws IOException {
-        App.game.getCharacter(6).changeRelationPoints(-20);
+        App.game.getCharacter(6).changeRelationPoints(-5);
         App.game.getCharacter(6).setLogOfDialogs(statementText, options.get(1));
-        
-        App.setRoot("TelaRodrigues");      
+
+        App.setRoot("TelaRodrigues");
     }
 
     public void Bottom() throws IOException {
-        App.game.getCharacter(6).changeRelationPoints(-50);
+        App.game.getCharacter(6).changeRelationPoints(-10);
         App.game.getCharacter(6).setLogOfDialogs(statementText, options.get(2));
-        
+
         App.setRoot("TelaRodrigues");
+    }
+
+    public void GoToLog() throws IOException {
+        App.game.setPreviousScreen("TelaDialogo");
+        App.setRoot("TelaLog");
     }
 }

@@ -1,5 +1,6 @@
 package amordoce;
 
+import amordoce.model.classCharacter.ClassCharacter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -14,13 +15,14 @@ public class TelaRamsayController implements Initializable {
 
     private String statementText = ":Olá! Sou chef Ramsey, comando a cozinha e espero que trabalhe bem junto conosco. \n Você já conheceu quem irá coordenar você durante essa semana. Mas deve ser apresentado ao resto da equipe.";
     private ArrayList<String> options = new ArrayList<>();
+    private ClassCharacter character = App.game.getCharacter(6);
 
     @FXML
     private ImageView background;
 
     @FXML
-    private ImageView character;
-
+    private ImageView characterScreen;
+    
     @FXML
     private Label statement;
 
@@ -45,16 +47,21 @@ public class TelaRamsayController implements Initializable {
     }
 
     public void Top() throws IOException {
-        App.game.getCharacter(8).changeRelationPoints(50);
-        App.game.getCharacter(8).setLogOfDialogs(statementText, options.get(0));
+        character.changeRelationPoints(50);
+        character.setLogOfDialogs(statementText, options.get(0));
         
         App.setRoot("TelaJacquin");    
     }
 
     public void Bottom() throws IOException {
-        App.game.getCharacter(8).changeRelationPoints(10);
-        App.game.getCharacter(8).setLogOfDialogs(statementText, options.get(1));
+        character.changeRelationPoints(10);
+        character.setLogOfDialogs(statementText, options.get(1));
         
         App.setRoot("TelaJacquin");      
+    }
+    
+    public void GoToLog() throws IOException {
+        App.game.setPreviousScreen("TelaRamsay");
+        App.setRoot("TelaLog");
     }
 }

@@ -1,5 +1,6 @@
 package amordoce;
 
+import amordoce.model.classCharacter.ClassCharacter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -8,18 +9,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 
 public class TelaFogacaController implements Initializable {
 
-    private String statementText = "Olá! Sou Alice Rodrigues, sou a confeiteira chefe do restaurante. Quer experimentar meu marijucake?";
+    private String statementText = "Ouvi alguém falando sobre interferências! Muito prazer sou Henrique Fogaça, é um prazer conhecer você!";
     private ArrayList<String> options = new ArrayList<>();
-
-    @FXML
-    private ImageView background;
-
-    @FXML
-    private ImageView character;
+    private ClassCharacter character = App.game.getCharacter(2);
 
     @FXML
     private Label statement;
@@ -29,32 +24,37 @@ public class TelaFogacaController implements Initializable {
 
     @FXML
     private Button top;
-    
+
     @FXML
     private Button bottom;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        options.add("Adoraria!");
-        options.add("Só depois do serviço!");
+        options.add("O prazer é todo meu! Ansios@ para trabalharmos juntos.");
+        options.add("Sai enxerido!!!");
 
-        status.setText(App.game.getCharacter(8).toString());
+        status.setText(character.toString());
         statement.setText(statementText);
         top.setText(options.get(0));
         bottom.setText(options.get(1));
     }
 
     public void Top() throws IOException {
-        App.game.getCharacter(8).changeRelationPoints(50);
-        App.game.getCharacter(8).setLogOfDialogs(statementText, options.get(0));
-        
-        App.setRoot("TelaJacquin");    
-    }
+        character.changeRelationPoints(10);
+        character.setLogOfDialogs(statementText, options.get(0));
 
+        App.setRoot("TelaJacquin");
+    }
+    
     public void Bottom() throws IOException {
-        App.game.getCharacter(8).changeRelationPoints(10);
-        App.game.getCharacter(8).setLogOfDialogs(statementText, options.get(1));
-        
-        App.setRoot("TelaJacquin");      
+        character.changeRelationPoints(-20);
+        character.setLogOfDialogs(statementText, options.get(1));
+
+        App.setRoot("TelaJacquin");
+    }
+    
+    public void GoToLog() throws IOException {
+        App.game.setPreviousScreen("TelaFogaca");
+        App.setRoot("TelaLog");
     }
 }

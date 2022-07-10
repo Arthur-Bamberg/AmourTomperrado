@@ -14,49 +14,55 @@
                 <Image url="@../assets/background/cozinha.png" />
             </image>
         </ImageView>
-        <ImageView layoutX="357.0" layoutY="252.0">
+        <ImageView layoutX="338.0" layoutY="252.0">
             <image>
                 <Image url="@../assets/gameCharacter/Obama.png" />
             </image>
         </ImageView>
-      <Label alignment="CENTER" layoutX="485.0" layoutY="42.0" prefHeight="179.0" prefWidth="397.0" style="-fx-background-color: RGBA(0, 0, 0, .5);" text="Você terá uma semana de experiência, escolha seu instrutor!" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font size="32.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="467.0" fitWidth="344.0" layoutX="-6.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/gameCharacter/Hilbert.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="467.0" fitWidth="295.0" layoutX="735.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/gameCharacter/Beca.png" />
-         </image>
-      </ImageView>
-      <Button layoutX="56.0" layoutY="300.0" mnemonicParsing="false" onAction="#chooseHilbert" prefHeight="63.0" prefWidth="105.0" text="Escolher">
-         <font>
-            <Font size="20.0" />
-         </font></Button>
-      <Label id="HilbertLabel" fx:id="HilbertLabel" alignment="CENTER" layoutX="109.0" layoutY="170.0" prefHeight="105.0" prefWidth="306.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font size="22.0" />
-         </font>
-      </Label>
-      <Label id="BecaLabel" fx:id="BecaLabel" alignment="CENTER" layoutX="979.0" layoutY="169.0" prefHeight="105.0" prefWidth="269.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" textFill="WHITE" wrapText="true">
-         <font>
-            <Font size="22.0" />
-         </font>
-      </Label>
-      <Button layoutX="1008.0" layoutY="312.0" mnemonicParsing="false" onAction="#chooseBeca" prefHeight="63.0" prefWidth="105.0" text="Escolher">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Label id="HilbertLabel" fx:id="ObamaLabel" alignment="CENTER" layoutX="598.0" layoutY="222.0" prefHeight="105.0" prefWidth="206.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-         <font>
-            <Font size="22.0" />
-         </font>
-      </Label>
+        <Label alignment="CENTER" layoutX="438.0" layoutY="-21.0" prefHeight="179.0" prefWidth="397.0" style="-fx-background-color: RGBA(0, 0, 0, .5);" text="Você terá uma semana de experiência, escolha seu instrutor!" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="467.0" fitWidth="344.0" layoutX="-6.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/gameCharacter/Hilbert.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="467.0" fitWidth="295.0" layoutX="735.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/gameCharacter/Beca.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="56.0" layoutY="300.0" mnemonicParsing="false" onAction="#chooseHilbert" prefHeight="63.0" prefWidth="105.0" text="Escolher">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Label id="HilbertLabel" fx:id="HilbertLabel" alignment="CENTER" layoutX="97.0" layoutY="41.0" prefHeight="234.0" prefWidth="318.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label id="BecaLabel" fx:id="BecaLabel" alignment="CENTER" layoutX="835.0" layoutY="69.0" prefHeight="234.0" prefWidth="294.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Button layoutX="1008.0" layoutY="312.0" mnemonicParsing="false" onAction="#chooseBeca" prefHeight="63.0" prefWidth="105.0" text="Escolher">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Label id="HilbertLabel" fx:id="ObamaLabel" alignment="CENTER" layoutX="589.0" layoutY="158.0" prefHeight="246.0" prefWidth="189.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Button layoutX="1132.0" mnemonicParsing="false" onAction="#GoToLog" prefHeight="108.0" prefWidth="234.0" text="Log">
+            <font>
+                <Font size="51.0" />
+            </font>
+        </Button>
     </children>
 </AnchorPane>

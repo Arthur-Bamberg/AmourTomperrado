@@ -4,41 +4,43 @@
  */
 package amordoce;
 
-import static amordoce.App.game;
 import amordoce.model.classCharacter.ClassCharacter;
+import java.io.IOException;
 import java.net.URL;
-import java.util.List;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
-/**
- * FXML Controller class
- *
- * @author Usuario
- */
 public class TelaFinalController implements Initializable {
-    private ClassCharacter obama = game.getCharacter(5);
-    private String logInAString;
-    private List <String> arrayOfLogs = obama.getLogOfDialogs();
-    
+
+    private ClassCharacter character = App.game.getCharacter(App.game.getChosenCharacter());
+
     @FXML
     private Label log;
-    
+
     @FXML
     private Label status;
-    
+
+    @FXML
+    private ImageView characterScreen;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        generateString();
-        status.setText(obama.toString());
-        log.setText(logInAString);
-    }    
+        status.setText(character.toString());
+        log.setText(character.getLogOfDialogs());
+        characterScreen.setImage(new Image(character.getImgSrc()));
+
+    }
     
-    public void generateString(){
-        for(int i = 0; i < arrayOfLogs.size(); i++){
-            logInAString += arrayOfLogs.get(i);
-        }
+    public void next() throws IOException{
+        App.setRoot("TelaCreditos");
+    }
+    
+    public void GoToLog() throws IOException {
+        App.game.setPreviousScreen("TelaFinal");
+        App.setRoot("TelaLog");
     }
 }

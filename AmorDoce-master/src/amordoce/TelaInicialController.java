@@ -11,9 +11,13 @@ import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 
 public class TelaInicialController implements Initializable {
-
     public void click() throws IOException {
         App.setRoot("TelaObama");
+    }
+    
+    public void GoToLog() throws IOException {
+        App.game.setPreviousScreen("TelaInicial");
+        App.setRoot("TelaLog");
     }
 
     @Override

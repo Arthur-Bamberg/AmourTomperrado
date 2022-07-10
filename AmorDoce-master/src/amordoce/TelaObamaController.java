@@ -12,10 +12,10 @@ public class TelaObamaController implements Initializable {
 
     @FXML
     private Label ObamaLabel;
-    
+
     @FXML
     private Label StatusLabel;
-    
+
     private Dialog dialog = App.game.getCharacter(5).getDialog(0);
 
     @Override
@@ -27,5 +27,10 @@ public class TelaObamaController implements Initializable {
     public void goToKitchen() throws IOException {
         App.game.response(5, dialog, 0);
         App.setRoot(dialog.getOption(0).getNextRoot());
+    }
+
+    public void GoToLog() throws IOException {
+        App.game.setPreviousScreen("TelaObama");
+        App.setRoot("TelaLog");
     }
 }

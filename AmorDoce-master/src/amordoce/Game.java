@@ -16,9 +16,13 @@ import amordoce.model.classCharacter.utils.Dialog;
 import java.util.ArrayList;
 
 public class Game {
+
+    private int chosenCharacter;
+    private String previousScreen;
+    private int instructor;
     private ArrayList<ClassCharacter> characterList = new ArrayList<>();
-    
-    public Game(){
+
+    public Game() {
         characterList.add(new Beca());//Indice 0
         characterList.add(new Carosella());//Indice 1
         characterList.add(new Fogaca());//Indice 2
@@ -30,12 +34,46 @@ public class Game {
         characterList.add(new Rodrigues());//Indice 8
         characterList.add(new Sangreal());//Indice 9
     }
-    
+
     public ClassCharacter getCharacter(int index) {
         return characterList.get(index);
     }
 
-    public void response (int indexOfCharacter, Dialog dialog, int indexOfOption) {
+    public void setPreviousScreen(String previousScreen) {
+        this.previousScreen = previousScreen;
+    }
+
+    public String getPreviousScreen() {
+        return this.previousScreen;
+    }
+
+    public void setInstructor(int instructor) {
+        this.instructor = instructor;
+    }
+
+    public int getInstructor() {
+        return this.instructor;
+    }
+
+    public void setChosenCharacter(int chosenCharacter) {
+        this.chosenCharacter = chosenCharacter;
+    }
+
+    public int getChosenCharacter() {
+        return this.chosenCharacter;
+    }
+
+    public void response(int indexOfCharacter, Dialog dialog, int indexOfOption) {
         characterList.get(indexOfCharacter).setResponse(dialog.getOption(indexOfOption).getChangeRelationPoints(), dialog.getStatement(), dialog.getOption(indexOfOption).getTextOption());
+    }
+
+    public ArrayList<Integer> getCharactersAllowed() {
+       ArrayList<Integer> charactersAllowed = new ArrayList<>();
+        for (int i = 0; i < characterList.size(); i++) {
+            if (getCharacter(i).getRelationPoints() - getCharacter(i).getDificultLevel() > 0) {
+                charactersAllowed.add(i);
+            }
+        }
+        return charactersAllowed;
     }
 }

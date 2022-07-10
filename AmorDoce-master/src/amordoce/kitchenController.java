@@ -1,6 +1,5 @@
 package amordoce;
 
-import static amordoce.App.game;
 import amordoce.model.classCharacter.ClassCharacter;
 import java.io.IOException;
 import java.net.URL;
@@ -10,15 +9,16 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 
 public class kitchenController implements Initializable {
-    private ClassCharacter beca = game.getCharacter(0);
-    private ClassCharacter hilbert = game.getCharacter(3);
-    
+
+    private ClassCharacter beca = App.game.getCharacter(0);
+    private ClassCharacter hilbert = App.game.getCharacter(3);
+
     @FXML
     private Label BecaLabel;
 
     @FXML
     private Label HilbertLabel;
-    
+
     @FXML
     private Label ObamaLabel;
 
@@ -30,28 +30,37 @@ public class kitchenController implements Initializable {
     }
 
     public void chooseBeca() throws IOException {
-        beca.changeRelationPoints(10);
+        beca.changeRelationPoints(5);
         beca.setLogOfDialogs("Escolha seu instrutor", "Beca");
-        
-        hilbert.changeRelationPoints(-20);
+
+        hilbert.changeRelationPoints(-5);
         hilbert.setLogOfDialogs("Escolha seu instrutor", "Beca");
-        
-        game.getCharacter(5).changeRelationPoints(5);
-        game.getCharacter(5).setLogOfDialogs("Escolha seu instrutor!", "Beca");
-        
+
+        App.game.getCharacter(5).changeRelationPoints(5);
+        App.game.getCharacter(5).setLogOfDialogs("Escolha seu instrutor!", "Beca");
+
+        App.game.setInstructor(0);
+
         App.setRoot("TelaDialogo");
     }
 
     public void chooseHilbert() throws IOException {
-        hilbert.changeRelationPoints(10);
+        hilbert.changeRelationPoints(5);
         hilbert.setLogOfDialogs("Escolha seu instrutor", "Hilbert");
-        
-        beca.changeRelationPoints(-20);
+
+        beca.changeRelationPoints(-5);
         beca.setLogOfDialogs("Escolha seu instrutor", "Hilbert");
-        
-        game.getCharacter(5).changeRelationPoints(5);
-        game.getCharacter(5).setLogOfDialogs("Escolha seu instrutor!", "Hilbert");
-        
+
+        App.game.getCharacter(5).changeRelationPoints(5);
+        App.game.getCharacter(5).setLogOfDialogs("Escolha seu instrutor!", "Hilbert");
+
+        App.game.setInstructor(3);
+
         App.setRoot("TelaDialogo");
+    }
+
+    public void GoToLog() throws IOException {
+        App.game.setPreviousScreen("kitchen");
+        App.setRoot("TelaLog");
     }
 }

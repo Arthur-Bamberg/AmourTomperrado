@@ -1,15 +1,15 @@
 package amordoce.model;
 
 import amordoce.model.classCharacter.ClassCharacter;
-import amordoce.model.classCharacter.utils.Dialog;
 
 public class Beca extends ClassCharacter {
     public Beca() {
         setName("Beca Milano");
+        setImgSrc("/assets/gameCharacter/Beca.png");
         setRelationPoints(50);
-        setCiumes(0);
-        setAversao(0);
-        setConfianca(15);
-        setDificultLevel(0);
+        setCiumes(30);
+        setAversao(90);
+        setConfianca(0);
+        setDificultLevel(30);
     }
 }

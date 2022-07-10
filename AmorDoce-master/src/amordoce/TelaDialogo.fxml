@@ -24,7 +24,7 @@
                 <Font size="32.0" />
             </font>
         </Label>
-        <Label fx:id="status" alignment="CENTER" layoutX="74.0" layoutY="51.0" prefHeight="114.0" prefWidth="302.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+        <Label fx:id="status" alignment="CENTER" layoutX="82.0" prefHeight="164.0" prefWidth="307.0" style="-fx-background-color: RGBA(0, 0, 0, .8);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
             <font>
                 <Font size="22.0" />
             </font>
@@ -42,6 +42,11 @@
         <Button fx:id="top" layoutX="471.0" layoutY="335.0" mnemonicParsing="false" onAction="#Top" prefHeight="120.0" prefWidth="660.0" text="Button" wrapText="true">
             <font>
                 <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="1132.0" mnemonicParsing="false" onAction="#GoToLog" prefHeight="108.0" prefWidth="234.0" text="Log">
+            <font>
+                <Font size="51.0" />
             </font>
         </Button>
     </children>

@@ -1,15 +1,15 @@
 package amordoce.model;
 
 import amordoce.model.classCharacter.ClassCharacter;
-import amordoce.model.classCharacter.utils.Dialog;
 
 public class Fogaca extends ClassCharacter {
     public Fogaca() {
         setName("Henrique Fogaça");
-        setRelationPoints(-20);
-        setCiumes(0);
-        setAversao(10);
-        setConfianca(-1);
-        setDificultLevel(0);
+        setImgSrc("/assets/gameCharacter/Fogaca.png");
+        setRelationPoints(30);
+        setCiumes(20);
+        setAversao(30);
+        setConfianca(30);
+        setDificultLevel(30);
     }
 }

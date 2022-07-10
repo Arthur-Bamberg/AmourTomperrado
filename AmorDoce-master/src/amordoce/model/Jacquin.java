@@ -1,17 +1,16 @@
 package amordoce.model;
 
 import amordoce.model.classCharacter.ClassCharacter;
-import amordoce.model.classCharacter.utils.Dialog;
 
-public class Jacquin extends ClassCharacter {//Estou usando como fase de teste e exemplo de como deve ser feito
-    //Ainda tem que implementar opções encadeadas dentro de um diálogo
+public class Jacquin extends ClassCharacter {
 
     public Jacquin() {
-        setName("Jacquin");//Nome do personagem
-        setRelationPoints(-10);//Pontos de relação no início do jogo
+        setName("Jacquin");
+        setRelationPoints(20);
+        setImgSrc("/assets/gameCharacter/Jacquin.png");
         setCiumes(0);
         setAversao(5);
         setConfianca(0);
-        setDificultLevel(0);
+        setDificultLevel(10);
     }
 }

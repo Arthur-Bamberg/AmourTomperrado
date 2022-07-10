@@ -1,5 +1,6 @@
 package amordoce;
 
+import amordoce.model.classCharacter.ClassCharacter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -8,18 +9,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 
 public class TelaJacquinController implements Initializable {
 
-    private String statementText = "Ow! Su Errick Jacquin, u rri do tomperro. Qui é vuce?";
+    private String statementText = "Ow! Su Errick Jacquin, u rri do tomperro. U ristrrant j vi fcha i expediench ja paticamench cabo, vam sai?";
     private ArrayList<String> options = new ArrayList<>();
-
-    @FXML
-    private ImageView background;
-
-    @FXML
-    private ImageView character;
+    private ClassCharacter character = App.game.getCharacter(4);
 
     @FXML
     private Label statement;
@@ -29,32 +24,53 @@ public class TelaJacquinController implements Initializable {
 
     @FXML
     private Button top;
+    
+    @FXML
+    private Button middle;
 
     @FXML
     private Button bottom;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        options.add("Sua maior fã! Sou uma chefe graças a você!!!");
-        options.add("Vigonha da pofisson");
+        options.add("Claro, seu lindo!");
+        options.add("Sai nojento!!!");
+        options.add("Você é a vigonha da pofisson!!!");
 
-        status.setText(App.game.getCharacter(8).toString());
+        status.setText(character.toString());
         statement.setText(statementText);
         top.setText(options.get(0));
-        bottom.setText(options.get(1));
+        middle.setText(options.get(1));
+        bottom.setText(options.get(2));
     }
 
     public void Top() throws IOException {
-        App.game.getCharacter(8).changeRelationPoints(50);
-        App.game.getCharacter(8).setLogOfDialogs(statementText, options.get(0));
+        character.changeRelationPoints(20);
+        character.setLogOfDialogs(statementText, options.get(0));
         
-        App.setRoot("TelaFinal");    
+        next();    
+    }
+    
+    public void Middle()throws IOException {
+        character.changeRelationPoints(-20);
+        character.setLogOfDialogs(statementText, options.get(1));
+        
+        next();
     }
 
     public void Bottom() throws IOException {
-        App.game.getCharacter(8).changeRelationPoints(10);
-        App.game.getCharacter(8).setLogOfDialogs(statementText, options.get(1));
+        character.changeRelationPoints(-5);
+        character.setLogOfDialogs(statementText, options.get(2));
         
-        App.setRoot("TelaFinal");      
+        next();
+    }
+    
+    public void next() throws IOException{
+        App.setRoot("TelaCarosella");      
+    }
+    
+    public void GoToLog() throws IOException {
+        App.game.setPreviousScreen("TelaJacquin");
+        App.setRoot("TelaLog");
     }
 }

@@ -7,13 +7,14 @@ import java.util.ArrayList;
 
 public class ClassCharacter {
     private String name;
+    private String imgSrc;
     private int dificultLevel;
     private int relationPoints;
     private int ciumes;
     private int aversao;
     private int confianca;
     private List <Dialog> dialogs = new ArrayList<>();
-    private List <String> logOfDialogs = new ArrayList<>();
+    private String logOfDialogs;
 
     public String getName() {
         return this.name;
@@ -21,6 +22,14 @@ public class ClassCharacter {
 
     public void setName(String name) {
         this.name = name;
+    }
+    
+    public String getImgSrc() {
+        return this.imgSrc;
+    }
+
+    public void setImgSrc(String imgSrc) {
+        this.imgSrc = imgSrc;
     }
     
     public int getDificultLevel() {
@@ -35,7 +44,7 @@ public class ClassCharacter {
         return this.relationPoints;
     }
 
-    public void setRelationPoints(int relationPoints) {
+    protected void setRelationPoints(int relationPoints) {
         this.relationPoints = relationPoints;
     }
     
@@ -88,10 +97,12 @@ public class ClassCharacter {
     }
     
     public void setLogOfDialogs(String statement, String option) {
-        logOfDialogs.add("Enunciado: " + statement + "Resposta escolhida: " + option);
+        if(statement != null && option != null) {
+            logOfDialogs += "\nEnunciado: " + statement + "\nResposta escolhida: " + option;
+        }
     }
     
-    public List <String> getLogOfDialogs() {
+    public String getLogOfDialogs() {
         return logOfDialogs;
     }
     
@@ -102,6 +113,6 @@ public class ClassCharacter {
     
     @Override
     public String toString() {
-        return "Nome: " + this.name + "\nRelacionamento: " + this.relationPoints;
+        return "Nome: " + this.name + "\nRelacionamento: " + this.relationPoints + "\nCiúmes: " + this.ciumes + "\nAversão: " + this.aversao + "\nConfiança: " + this.confianca;
     }
 }
